@@ -120,7 +120,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 15px 15px;
-  border: 0;
+  border: 1px solid var(--text-color);
   position: relative;
   overflow: hidden;
   border-radius: 10rem;
@@ -129,7 +129,7 @@ main {
   cursor: pointer;
   color: var(--text-color);
   z-index: 0;
-  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 7px -5px rgb(0, 0, 0);
   width: 200px;
 }
 
