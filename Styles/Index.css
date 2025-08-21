@@ -31,6 +31,7 @@ body {
     color: var(--text-color);
     background: #EAECC6;
 background: linear-gradient(120deg, rgba(234, 236, 198, 1) 0%, rgba(249, 250, 240, 1) 50%, rgba(187, 237, 252, 1) 100%);
+ background-repeat: no-repeat;
 }
 header {
     display: flex;
@@ -83,6 +84,7 @@ menu li a:hover{
 main {
     max-width: 1440px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -92,6 +94,7 @@ main {
     width: 100%;
     height: 100%;
     padding: 4rem;
+    gap: 1;
 }
 
 .informacion {
@@ -99,13 +102,13 @@ main {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 100%;
+    width: 80%;
     text-align: start;
     padding: 0;
     margin: 0;
 }
 .mapa {
-    width: 90%;
+    width: 600px;
     height:100%;
     background-image: url('/Public/Imagenes/mapaColombia.svg');
     background-size: contain;
@@ -114,6 +117,11 @@ main {
 }
 .informacion p{
     margin-bottom: 1.5rem;
+    max-width: 750px;
+}
+
+.text-personal {
+    width: 100%;
 }
 .button {
   display: inline-flex;
@@ -131,6 +139,8 @@ main {
   z-index: 0;
   box-shadow: 0 0px 7px -5px rgb(0, 0, 0);
   width: 200px;
+  background: linear-gradient(120deg, rgba(234, 236, 198, 1) 0%, rgba(249, 250, 240, 1) 50%, rgba(187, 237, 252, 1) 100%);
+
 }
 
 .button:hover {
@@ -186,5 +196,34 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .informacion {
+        text-align: center;
+    }
+    .mapa {
+        width: 100%;
+        height: 300px;
+        margin-top: 2rem;
+    }
+}
 
 
+.sobre-mi{
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  padding: 6rem;
+  height: 100dvh;
+  gap: 4rem;
+
+}
+.info-sobre-mi {
+  max-width: 400px;
+}
+.info-sobre-mi h2{
+ font-size: 2rem;
+}
